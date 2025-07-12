@@ -58,7 +58,7 @@ Proxy in USA or other allowed location
 ## Program
 1. this is a uv project, install uv and run  
     ```bash
-    # do not run in vscode terminal  
+    # comment out cvShowImage in non gui environment or vscode terminal
     uv sync 
     source .venv/bin/activate
     cp .env.example .env
