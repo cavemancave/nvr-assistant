@@ -1,10 +1,12 @@
 # Summary
 A simple project that sends phone notifications when a person falls. Image recognition is handled by an LLM (Google Gemini), with YOLOv8 used to detect motion and reduce token usage. Notifications are triggered via an MQTT topic in Home Assistant.  
+You can also simply modify the prompt to perform other detections.  
 
 # Configuration
 ## Gemini Api
 Apply for a Gemini API  
 Proxy in USA or other allowed location  
+Use Gemini Chat to debug your snapshot and prompt  
 
 ## Home Assistant
 1. install addons/intergrations: MQTT, File editor  
