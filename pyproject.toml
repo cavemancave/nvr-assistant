@@ -1,0 +1,14 @@
+[project]
+name = "yolo-person-detect"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "openai>=1.95.1",
+    "opencv-python>=4.12.0.88",
+    "opencv-python-headless>=4.12.0.88",
+    "paho-mqtt>=2.1.0",
+    "ultralytics>=8.3.163",
+]
