@@ -42,10 +42,10 @@ Proxy in USA or other allowed location
 1. test the automation:  
     install mosquitto on ubuntu, and publish to topics  
     ```bash
-    mosquitto_pub -h hass_ip -u hass_user -P hass_password -t nvr/notification/image -f fall.jpg
+    mosquitto_pub -h hass_ip -u hass_user -P hass_password -t nvr/notification/image -f test/fall.jpg
     mosquitto_pub -h hass_ip -u hass_user -P hass_password -t nvr/notification/trigger -m "yes"
     ```
-    now, you should get the notification on your phone.  A message with a thumbnil. On Android OS, there will be a expand icon to show the whole image, but cannot expand on IOS.
+    You should now receive a notification on your phone, including a message with a thumbnail image. On Android, you can tap the expand icon to view the full image. However, this feature is not supported on iOS.
     ![notification_example](test/notification_example.png)  
 1. create a test rtsp stream  
     the live.mp4 is 5 fps, can't be read directly, if your test.mp4 has a normal fps, this step is not needed.  
@@ -58,7 +58,10 @@ Proxy in USA or other allowed location
 ## Program
 1. this is a uv project, install uv and run  
     ```bash
+    # do not run in vscode terminal  
     uv sync 
     source .venv/bin/activate
-    python main.py
+    cp .env.example .env
+    vi .env 
+    python main.py 
     ```
